@@ -1,0 +1,124 @@
+/* MAIN */
+.component {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-radius: 0.1389rem;
+}
+.section{}
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  font-size: 0.9722rem;
+  box-sizing: border-box;
+  top: 1.1111rem;
+  padding: 0 1.1111rem;
+  opacity: .6;
+  transition: 0.2s ease all;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.focused~.placeholder,
+.filled .placeholder,
+.error .field:not([value=''])~.placeholder {
+  top: 0.4167rem;
+  font-size: 0.8333rem;
+  opacity: .4;
+}
+
+.sectionField,
+.field {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.field {
+  font-size: inherit;
+  padding: 0 1.1111rem 0;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 1.1111rem;
+  overflow: hidden;
+}
+
+.textarea::placeholder{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.field:not(:only-child) {
+  padding: 1.1111rem 1.1111rem 0;
+}
+
+.sectionIcon {
+  height: 1.1111rem;
+  position: absolute;
+  right: 1.6667rem;
+}
+
+.sectionRequired{
+  position: absolute;
+  right: 0.5556rem;
+  top: 0.5556rem;
+  font-size: 0.9722rem;
+}
+
+/* SIZE */
+.big {
+  height: 3.7500rem;
+  min-height: 3.7500rem;
+  font-size: 0.9722rem;
+}
+
+.medium {
+  height: 3.4722rem;
+  min-height: 3.4722rem;
+  font-size: 0.9722rem;
+}
+
+.small {
+  height: 3.0556rem;
+  min-height: 3.0556rem;
+  font-size: 0.8333rem;
+}
+
+.small .field {
+  padding: 0 1.1111rem;
+}
+
+/* COLOR */
+.grey-border {
+  border: 0.0694rem solid #D8DCDF;
+}
+
+
+/* ERROR */
+.error {
+  border: 0.0694rem solid #FA5252;
+}
+
+.sectionError {
+  padding: 0.1rem 0 0 0;
+}
+
+.errorItem {
+  font-size: 0.8333rem;
+  line-height: 1.0417rem;
+  color: #FA5252;
+  display: flex;
+  white-space: pre-wrap;
+}

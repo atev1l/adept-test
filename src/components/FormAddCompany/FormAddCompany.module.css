@@ -1,0 +1,22 @@
+.input_address{
+    margin-top: 20px;
+}
+.label_input{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.button_container{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.input_company{
+    margin-top: 2rem;
+}
+@media screen and (max-width: 450px){
+    .label_input{
+        font-size: 16px;
+    }
+}

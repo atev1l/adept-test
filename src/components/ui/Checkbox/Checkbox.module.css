@@ -1,0 +1,35 @@
+.component {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.125rem;
+  height: 1.125rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: .125rem;
+  -moz-border-radius: .125rem;
+  -webkit-border-radius: .125rem;
+  border: .0625rem solid #7b6ec7;
+  position: relative;
+  cursor: pointer;
+}
+
+.checked::before {
+  display: block;
+  left: -0.1rem;
+  content: '✔';
+  position: absolute;
+  top:0;  right:0; bottom:0;
+  margin: auto;
+  width: 1.125rem;
+  height: 1.125rem;
+  line-height: 1.2rem;
+  background-color: #7b6ec7;
+  border-radius: .125rem;
+  -moz-border-radius: .125rem;
+  -webkit-border-radius: .125rem;
+  text-align: center;
+  font-size: .625rem;
+  color:#ffffff;
+}
+.hidden { display: none; }
