@@ -3,6 +3,6 @@ import {catsReducer} from "./catsReducer";
 import {companiesReducer} from "./companiesReducer";
 import thunk from "redux-thunk";
 
-const rootReducer = combineReducers({cats: catsReducer, companies: companiesReducer})
+const rootReducer = combineReducers({companies: companiesReducer})
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))
